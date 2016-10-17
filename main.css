@@ -1,0 +1,16 @@
+* {
+	text-align: center;
+}
+
+button {
+	background-color: darkblue;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 2%;
+	margin-top: 10px;
+}
+
+#answer2 {
+	font-style: italic;
+}
