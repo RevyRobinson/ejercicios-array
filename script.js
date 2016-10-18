@@ -1,5 +1,5 @@
 //ejercicio 1
-
+/*
 function retornaMenor (num1 , num2 , num3){
 	//pidiendo al usuario los numeros
 	var num1 = prompt("Ingrese el primer número");
@@ -19,17 +19,34 @@ function retornaMenor (num1 , num2 , num3){
 	}
 
 }
+*/
+//ejercicio 1 repensado en arreglos
+
+function retornaMenor (){
+	//crear array con numeros
+	var arrayNumeros = [];
+	for (var i = 0 ; i < 3 ; i++){
+		arrayNumeros.push(parseInt(prompt("Indique un número")))
+	}
+	var rest = arrayNumeros[0] ;
+        for(var i=0; i < arrayNumeros.length; i++){
+            if (arrayNumeros[i] < rest){
+                rest = arrayNumeros[i];
+            }
+        }
+    alert("El número menor es " + rest);
+}
+
+
+
 
 //ejercicio 2
 
 function parImpar(){
 	//recibe un numero del usuario
-	var num = prompt("Ingrese un número");
-	//transformar la respuesta a entero
-	var entero = parseInt(num);
+	var num = parseInt(prompt("Ingrese un número"));
 	//revisar si es par o impar
-	
-	if ( entero % 2 == 0){
+	if ( num % 2 == 0){
 		document.getElementById("answer2").innerHTML = "El número es par";
 	} else {
 		document.getElementById("answer2").innerHTML = "El número es impar";
@@ -98,4 +115,10 @@ function mayusOMinus(){
     resultado += ", está formada por mayúsculas y minúsculas";
   }
   	document.getElementById('answer4').innerHTML = resultado;
+}
+
+//ejercicio 5
+
+function palindromo(){
+
 }
